@@ -52,6 +52,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\CadastroCarroExibir.cs" />
+    <Compile Include="Resources\CadastroCompraCombustivelExibir1.cs" />
+    <Compile Include="Resources\CadastroGastoExibir.cs" />
+    <Compile Include="Resources\CadastroGrupoExibir.cs" />
+    <Compile Include="Resources\CadastroMotoristaExibir.cs" />
+    <Compile Include="Resources\CadastroUsuarioExibir.cs" />
+    <Compile Include="Resources\CadastroVistoriaExibir.cs" />
+    <Compile Include="Resources\ConsultaValorContribuirExibir.cs" />
+    <Compile Include="Resources\MapaOficinaExibir.cs" />
+    <Compile Include="Resources\PesquisaDadosExibir.cs" />
+    <Compile Include="Resources\PesquisaRodizioExibir.cs" />
+    <Compile Include="Resources\PesquisaVeiculoExibir.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\TelaLogin.cs" />

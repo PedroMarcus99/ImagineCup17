@@ -11,6 +11,7 @@ using System.Linq;
 using Android.Locations;
 using AppSharingVehicle.Resources; 
 
+
 namespace AppSharingVehicle
 {
     [Activity(Label = "Sharing Vehicle", MainLauncher = true, Icon = "@drawable/sharing48")]

@@ -52,21 +52,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
-    <Compile Include="Resources\CadastroCarroExibir.cs" />
-    <Compile Include="Resources\CadastroCompraCombustivelExibir1.cs" />
-    <Compile Include="Resources\CadastroGastoExibir.cs" />
-    <Compile Include="Resources\CadastroGrupoExibir.cs" />
-    <Compile Include="Resources\CadastroMotoristaExibir.cs" />
-    <Compile Include="Resources\CadastroUsuarioExibir.cs" />
-    <Compile Include="Resources\CadastroVistoriaExibir.cs" />
-    <Compile Include="Resources\ConsultaValorContribuirExibir.cs" />
-    <Compile Include="Resources\MapaOficinaExibir.cs" />
-    <Compile Include="Resources\PesquisaDadosExibir.cs" />
-    <Compile Include="Resources\PesquisaRodizioExibir.cs" />
-    <Compile Include="Resources\PesquisaVeiculoExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroCarroExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroCompraCombustivelExibir1.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroGastoExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroGrupoExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroMotoristaExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroUsuarioExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\CadastroVistoriaExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\ConsultaValorContribuirExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\MapaOficinaExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\PesquisaDadosExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\PesquisaRodizioExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\PesquisaVeiculoExibir.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\TelaLogin.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\TelaLogin.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />

@@ -22,10 +22,12 @@ namespace AppSharingVehicle
             base.OnCreate(bundle);
 
             // Set our view from the "main" layout resource
+            // Instancia a tela para a primeira exibição do Software. 
             SetContentView (Resource.Layout.Main);
 
             //os botões que instanciam uma nova tela ficam aqui.. 
             FindViewById<Button>(Resource.Id.BtnLogin).Click += ExibeTelaLogin;
+            FindViewById<Button>(Resource.Id.BtnCadastro).Click += ExibeTelaCadastroDeUsuario; 
         }
         //Método que instancia a tela de login. 
         void ExibeTelaLogin(object sender,EventArgs e )

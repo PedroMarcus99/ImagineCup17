@@ -75,8 +75,8 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050009
 			public const int BtnCadastro = 2131034121;
 			
-			// aapt resource value: 0x7f05000f
-			public const int BtnCadastroMotorista = 2131034127;
+			// aapt resource value: 0x7f050010
+			public const int BtnCadastroMotorista = 2131034128;
 			
 			// aapt resource value: 0x7f05000e
 			public const int BtnCadastroVistoriaExibir = 2131034126;
@@ -102,8 +102,8 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050013
 			public const int BtnRodizioExibir = 2131034131;
 			
-			// aapt resource value: 0x7f050010
-			public const int BtnValoresExibir = 2131034128;
+			// aapt resource value: 0x7f05000f
+			public const int BtnValoresExibir = 2131034127;
 			
 			// aapt resource value: 0x7f05000b
 			public const int CadastroGastoExibir = 2131034123;

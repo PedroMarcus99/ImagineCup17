@@ -29,15 +29,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/BtnCadastroVistoriaExibir" />
     <Button
-        android:text="Cadastrar Motorista"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/BtnCadastroMotorista" />
-    <Button
         android:text="Consultar Valores"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/BtnValoresExibir" />
+    <Button
+        android:text="Cadastrar Motorista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCadastroMotorista" />
     <Button
         android:text="Pesquisar Dados "
         android:layout_width="match_parent"

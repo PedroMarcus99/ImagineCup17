@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:text="Mapear Oficinas "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnOficinas" />
+    <Button
+        android:text="Cadastrar Gastos "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CadastroGastoExibir" />
+    <Button
+        android:text="Cadastrar Grupo "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCadastrarGrupoExibir" />
+    <Button
+        android:text="Cadastrar Veículo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCadastrarVeiculoExibir" />
+    <Button
+        android:text="Cadastrar Vistoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCadastroVistoriaExibir" />
+    <Button
+        android:text="Cadastrar Motorista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCadastroMotorista" />
+    <Button
+        android:text="Consultar Valores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnValoresExibir" />
+    <Button
+        android:text="Pesquisar Dados "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnPesquisarDadosExibir" />
+    <Button
+        android:text="Pesquisar Veículos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnPesquisaVeiculoExibir" />
+    <Button
+        android:text="Pesquisar Rodizios "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnRodizioExibir" />
+    <Button
+        android:text="Compra de Combustível "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/BtnCompraCombustivelExibir" />
+</LinearLayout>

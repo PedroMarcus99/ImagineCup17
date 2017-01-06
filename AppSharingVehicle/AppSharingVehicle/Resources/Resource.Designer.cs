@@ -66,14 +66,47 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050004
 			public const int BtnCadastrar = 2131034116;
 			
+			// aapt resource value: 0x7f05000c
+			public const int BtnCadastrarGrupoExibir = 2131034124;
+			
+			// aapt resource value: 0x7f05000d
+			public const int BtnCadastrarVeiculoExibir = 2131034125;
+			
 			// aapt resource value: 0x7f050009
 			public const int BtnCadastro = 2131034121;
+			
+			// aapt resource value: 0x7f05000f
+			public const int BtnCadastroMotorista = 2131034127;
+			
+			// aapt resource value: 0x7f05000e
+			public const int BtnCadastroVistoriaExibir = 2131034126;
+			
+			// aapt resource value: 0x7f050014
+			public const int BtnCompraCombustivelExibir = 2131034132;
 			
 			// aapt resource value: 0x7f050007
 			public const int BtnLogar = 2131034119;
 			
 			// aapt resource value: 0x7f050008
 			public const int BtnLogin = 2131034120;
+			
+			// aapt resource value: 0x7f05000a
+			public const int BtnOficinas = 2131034122;
+			
+			// aapt resource value: 0x7f050012
+			public const int BtnPesquisaVeiculoExibir = 2131034130;
+			
+			// aapt resource value: 0x7f050011
+			public const int BtnPesquisarDadosExibir = 2131034129;
+			
+			// aapt resource value: 0x7f050013
+			public const int BtnRodizioExibir = 2131034131;
+			
+			// aapt resource value: 0x7f050010
+			public const int BtnValoresExibir = 2131034128;
+			
+			// aapt resource value: 0x7f05000b
+			public const int CadastroGastoExibir = 2131034123;
 			
 			// aapt resource value: 0x7f050001
 			public const int TxtNomeCadastrar = 2131034113;
@@ -114,6 +147,9 @@ namespace AppSharingVehicle
 			
 			// aapt resource value: 0x7f030002
 			public const int Main = 2130903042;
+			
+			// aapt resource value: 0x7f030003
+			public const int MenuInicial = 2130903043;
 			
 			static Layout()
 			{

@@ -12,7 +12,7 @@ using Android.Widget;
 using AppSharingVehicle.Resources; 
 
 namespace AppSharingVehicle.Resources
-{
+{ [Activity (Label = "Cadastro")]
     public class CadastroUsuarioExibir : Activity
     {
         protected override void OnCreate(Bundle bundle)

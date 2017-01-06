@@ -9,6 +9,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Android.Locations;
+using AppSharingVehicle.Resources; 
+
 namespace AppSharingVehicle
 {
     [Activity(Label = "Sharing Vehicle", MainLauncher = true, Icon = "@drawable/sharing48")]
@@ -25,10 +27,16 @@ namespace AppSharingVehicle
             //os botões que instanciam uma nova tela ficam aqui.. 
             FindViewById<Button>(Resource.Id.BtnLogin).Click += ExibeTelaLogin;
         }
-
+        //Método que instancia a tela de login. 
         void ExibeTelaLogin(object sender,EventArgs e )
         {
             StartActivity(typeof(TelaLogin));
+        }
+
+        //Método que instancia a tela de Cadastro de usuário. 
+        void ExibeTelaCadastroDeUsuario(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroUsuarioExibir)); 
         }
     }
 }

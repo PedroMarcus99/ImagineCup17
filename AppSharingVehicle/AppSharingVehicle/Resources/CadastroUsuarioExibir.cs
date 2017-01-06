@@ -9,10 +9,30 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using AppSharingVehicle.Resources; 
 
 namespace AppSharingVehicle.Resources
 {
-    class CadastroUsuarioExibir
+    public class CadastroUsuarioExibir : Activity
     {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.CadastrarUsuario);
+            this.ActionBar.SetDisplayHomeAsUpEnabled(true);
+        }
+
+        public override bool OnContextItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return true;
+                default:
+                    return base.OnContextItemSelected(item);
+            }
+
+        }
     }
 }

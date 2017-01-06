@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace AppSharingVehicle.Resources
 {
-    class CadastroCompraCombustivelExibir1
+    public class CadastroCompraCombustivelExibir1
     {
     }
 }

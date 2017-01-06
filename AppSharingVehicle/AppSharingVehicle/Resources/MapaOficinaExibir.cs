@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace AppSharingVehicle.Resources
 {
-    class MapaOficinaExibir
+    public class MapaOficinaExibir
     {
     }
 }

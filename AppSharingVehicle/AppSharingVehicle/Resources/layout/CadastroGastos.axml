@@ -2,4 +2,68 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="103.5dp"
+        android:id="@+id/linearLayout1" />
+    <TextView
+        android:text="Digite o Gasto: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtGastoCadastrar" />
+    <TextView
+        android:text="Digite a Quantidade de Parcelas: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtNumeroParcelaCadastrar" />
+    <TextView
+        android:text="Digite o Valor da Parcela:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtValorParcelaCadastrar" />
+    <TextView
+        android:text="Digite o Número de Identificação do Veículo: "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtIdVeiculoGastoCadastrar" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:text="Cancelar"
+            android:id="@+id/BtnCancelarGasto"
+            android:layout_width="190.5dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Confirmar"
+            android:id="@+id/BtnConfirmaGasto"
+            android:layout_width="190.0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

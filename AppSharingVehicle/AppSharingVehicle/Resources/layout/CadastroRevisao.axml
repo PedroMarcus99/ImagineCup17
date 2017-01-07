@@ -2,4 +2,80 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="55.5dp"
+        android:id="@+id/linearLayout1" />
+    <TextView
+        android:text="Preencha os Campos Corretamente:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtTipoManutencaoRevisao"
+        android:textAlignment="d"
+        android:text="Tipo de Manutenção: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtNomeOficinaRevisao"
+        android:text="Nome da Oficina: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtDataEntradaRevisao"
+        android:text="Data de Entrada: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtDataSaidaRevisao"
+        android:text="Data de Saída:" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtHoraEntradaRevisao"
+        android:text="Hora de Entrada: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtHoraSaidaRevisao"
+        android:text="Hora de Saída: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtItemTrocadoRevisao"
+        android:text="Nome do Ítem trocado/arrumado: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtQuantidadeDeItemRevisao"
+        android:text="Quantidade de Ítem: " />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TxtPrecoRevisao"
+        android:text="Preço da Revisão: " />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="64.5dp"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:text="Cancelar"
+            android:id="@+id/BtnCancelaRevisao"
+            android:layout_width="189.0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="Confirmar"
+            android:layout_width="190.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/BtnConfirmaRevisao" />
+    </LinearLayout>
+</LinearLayout>

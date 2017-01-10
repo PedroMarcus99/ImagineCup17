@@ -15,11 +15,13 @@ namespace AppSharingVehicle
 { [Activity (Label = "Login")]
     public class TelaLogin : Activity
     {
+        MainActivity UsaBotao = new MainActivity();
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Login);
             this.ActionBar.SetDisplayHomeAsUpEnabled(true);
+            FindViewById<Button>(Resource.Id.BtnLogar).Click += UsaBotao.ExibeMenuInicial;
         }
 
         public override bool OnContextItemSelected(IMenuItem item)
@@ -31,8 +33,12 @@ namespace AppSharingVehicle
                     return true;
                 default:
                     return base.OnContextItemSelected(item);
-            }
+            }           
 
         }
+        
+       
+       
+        
     }
 }

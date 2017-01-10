@@ -69,8 +69,8 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050020
 			public const int BtnCadastrarGrupo = 2131034144;
 			
-			// aapt resource value: 0x7f050031
-			public const int BtnCadastrarGrupoExibir = 2131034161;
+			// aapt resource value: 0x7f05003c
+			public const int BtnCadastrarGrupoExibir = 2131034172;
 			
 			// aapt resource value: 0x7f050027
 			public const int BtnCadastrarMotorista = 2131034151;
@@ -78,26 +78,29 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050016
 			public const int BtnCadastrarVeiculo = 2131034134;
 			
-			// aapt resource value: 0x7f050032
-			public const int BtnCadastrarVeiculoExibir = 2131034162;
+			// aapt resource value: 0x7f05003d
+			public const int BtnCadastrarVeiculoExibir = 2131034173;
 			
-			// aapt resource value: 0x7f05002e
-			public const int BtnCadastro = 2131034158;
+			// aapt resource value: 0x7f050039
+			public const int BtnCadastro = 2131034169;
 			
-			// aapt resource value: 0x7f050035
-			public const int BtnCadastroMotorista = 2131034165;
+			// aapt resource value: 0x7f050040
+			public const int BtnCadastroMotorista = 2131034176;
 			
-			// aapt resource value: 0x7f050029
-			public const int BtnCadastroNovoItem = 2131034153;
+			// aapt resource value: 0x7f050034
+			public const int BtnCadastroNovoItem = 2131034164;
 			
-			// aapt resource value: 0x7f050033
-			public const int BtnCadastroVistoriaExibir = 2131034163;
+			// aapt resource value: 0x7f05003e
+			public const int BtnCadastroVistoriaExibir = 2131034174;
+			
+			// aapt resource value: 0x7f050031
+			public const int BtnCancelaRevisao = 2131034161;
 			
 			// aapt resource value: 0x7f05001c
 			public const int BtnCancelarGasto = 2131034140;
 			
-			// aapt resource value: 0x7f050039
-			public const int BtnCompraCombustivelExibir = 2131034169;
+			// aapt resource value: 0x7f050044
+			public const int BtnCompraCombustivelExibir = 2131034180;
 			
 			// aapt resource value: 0x7f050009
 			public const int BtnConfirmaAgendamento = 2131034121;
@@ -105,29 +108,32 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f05001d
 			public const int BtnConfirmaGasto = 2131034141;
 			
-			// aapt resource value: 0x7f05002c
-			public const int BtnLogar = 2131034156;
-			
-			// aapt resource value: 0x7f05002d
-			public const int BtnLogin = 2131034157;
-			
-			// aapt resource value: 0x7f05002f
-			public const int BtnOficinas = 2131034159;
+			// aapt resource value: 0x7f050032
+			public const int BtnConfirmaRevisao = 2131034162;
 			
 			// aapt resource value: 0x7f050037
-			public const int BtnPesquisaVeiculoExibir = 2131034167;
-			
-			// aapt resource value: 0x7f050036
-			public const int BtnPesquisarDadosExibir = 2131034166;
+			public const int BtnLogar = 2131034167;
 			
 			// aapt resource value: 0x7f050038
-			public const int BtnRodizioExibir = 2131034168;
+			public const int BtnLogin = 2131034168;
 			
-			// aapt resource value: 0x7f050034
-			public const int BtnValoresExibir = 2131034164;
+			// aapt resource value: 0x7f05003a
+			public const int BtnOficinas = 2131034170;
 			
-			// aapt resource value: 0x7f050030
-			public const int CadastroGastoExibir = 2131034160;
+			// aapt resource value: 0x7f050042
+			public const int BtnPesquisaVeiculoExibir = 2131034178;
+			
+			// aapt resource value: 0x7f050041
+			public const int BtnPesquisarDadosExibir = 2131034177;
+			
+			// aapt resource value: 0x7f050043
+			public const int BtnRodizioExibir = 2131034179;
+			
+			// aapt resource value: 0x7f05003f
+			public const int BtnValoresExibir = 2131034175;
+			
+			// aapt resource value: 0x7f05003b
+			public const int CadastroGastoExibir = 2131034171;
 			
 			// aapt resource value: 0x7f050022
 			public const int TxtCNHDoMotorista = 2131034146;
@@ -147,6 +153,12 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050024
 			public const int TxtDataDeNascimentoDoMotorista = 2131034148;
 			
+			// aapt resource value: 0x7f05002a
+			public const int TxtDataEntradaRevisao = 2131034154;
+			
+			// aapt resource value: 0x7f05002b
+			public const int TxtDataSaidaRevisao = 2131034155;
+			
 			// aapt resource value: 0x7f050025
 			public const int TxtDataVencimentoCNHMotorista = 2131034149;
 			
@@ -156,6 +168,12 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050017
 			public const int TxtGastoCadastrar = 2131034135;
 			
+			// aapt resource value: 0x7f05002c
+			public const int TxtHoraEntradaRevisao = 2131034156;
+			
+			// aapt resource value: 0x7f05002d
+			public const int TxtHoraSaidaRevisao = 2131034157;
+			
 			// aapt resource value: 0x7f050006
 			public const int TxtIdMotoristaAgendar = 2131034118;
 			
@@ -164,6 +182,9 @@ namespace AppSharingVehicle
 			
 			// aapt resource value: 0x7f05001a
 			public const int TxtIdVeiculoGastoCadastrar = 2131034138;
+			
+			// aapt resource value: 0x7f05002e
+			public const int TxtItemTrocadoRevisao = 2131034158;
 			
 			// aapt resource value: 0x7f050011
 			public const int TxtMarcaCadastrar = 2131034129;
@@ -177,8 +198,11 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050021
 			public const int TxtNomeDoMotorista = 2131034145;
 			
-			// aapt resource value: 0x7f050028
-			public const int TxtNovoItem = 2131034152;
+			// aapt resource value: 0x7f050029
+			public const int TxtNomeOficinaRevisao = 2131034153;
+			
+			// aapt resource value: 0x7f050033
+			public const int TxtNovoItem = 2131034163;
 			
 			// aapt resource value: 0x7f050026
 			public const int TxtNumeroIdMotorista = 2131034150;
@@ -188,6 +212,12 @@ namespace AppSharingVehicle
 			
 			// aapt resource value: 0x7f050010
 			public const int TxtPlacaCadastrar = 2131034128;
+			
+			// aapt resource value: 0x7f050030
+			public const int TxtPrecoRevisao = 2131034160;
+			
+			// aapt resource value: 0x7f05002f
+			public const int TxtQuantidadeDeItemRevisao = 2131034159;
 			
 			// aapt resource value: 0x7f050015
 			public const int TxtQuilometragemCadastrar = 2131034133;
@@ -200,6 +230,9 @@ namespace AppSharingVehicle
 			
 			// aapt resource value: 0x7f05000c
 			public const int TxtSenhaCadastrarRepetir = 2131034124;
+			
+			// aapt resource value: 0x7f050028
+			public const int TxtTipoManutencaoRevisao = 2131034152;
 			
 			// aapt resource value: 0x7f050019
 			public const int TxtValorParcelaCadastrar = 2131034137;
@@ -231,11 +264,11 @@ namespace AppSharingVehicle
 			// aapt resource value: 0x7f050004
 			public const int txtHoraAgendar = 2131034116;
 			
-			// aapt resource value: 0x7f05002b
-			public const int txtSenha = 2131034155;
+			// aapt resource value: 0x7f050036
+			public const int txtSenha = 2131034166;
 			
-			// aapt resource value: 0x7f05002a
-			public const int txtUsuario = 2131034154;
+			// aapt resource value: 0x7f050035
+			public const int txtUsuario = 2131034165;
 			
 			static Id()
 			{

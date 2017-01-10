@@ -61,6 +61,7 @@
     <Compile Include="Resources\ClassesDeTransicao\CadastroVistoriaExibir.cs" />
     <Compile Include="Resources\ClassesDeTransicao\ConsultaValorContribuirExibir.cs" />
     <Compile Include="Resources\ClassesDeTransicao\MapaOficinaExibir.cs" />
+    <Compile Include="Resources\ClassesDeTransicao\MenuInicial.cs" />
     <Compile Include="Resources\ClassesDeTransicao\PesquisaDadosExibir.cs" />
     <Compile Include="Resources\ClassesDeTransicao\PesquisaRodizioExibir.cs" />
     <Compile Include="Resources\ClassesDeTransicao\PesquisaVeiculoExibir.cs" />

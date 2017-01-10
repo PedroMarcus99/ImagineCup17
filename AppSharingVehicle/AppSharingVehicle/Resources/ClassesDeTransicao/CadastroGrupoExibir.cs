@@ -11,8 +11,27 @@ using Android.Views;
 using Android.Widget;
 
 namespace AppSharingVehicle.Resources
-{
-    public class CadastroGrupoExibir
+{ [Activity (Label = "")]
+    public class CadastroGrupoExibir : Activity
     {
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.Login);
+            this.ActionBar.SetDisplayHomeAsUpEnabled(true);
+        }
+
+        public override bool OnContextItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return true;
+                default:
+                    return base.OnContextItemSelected(item);
+            }
+
+        }
     }
 }

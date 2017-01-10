@@ -12,7 +12,29 @@ using Android.Widget;
 
 namespace AppSharingVehicle.Resources
 {
-    public class CadastroCompraCombustivelExibir1
+    [Activity(Label = "Cadastro de Combustível")]
+    public class CadastroCompraCombustivelExibir1 : Activity
     {
+
+        protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.CadastroCompraCombustivel);
+            this.ActionBar.SetDisplayHomeAsUpEnabled(true);
+        }
+
+        public override bool OnContextItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return false;
+
+                default:
+                    return base.OnContextItemSelected(item);
+
+            }
+        }
     }
 }

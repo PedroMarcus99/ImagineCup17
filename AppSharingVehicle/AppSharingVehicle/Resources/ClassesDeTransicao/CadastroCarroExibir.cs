@@ -11,8 +11,27 @@ using Android.Views;
 using Android.Widget;
 
 namespace AppSharingVehicle.Resources
-{
-    public class CadastroCarroExibir
+{ [Activity (Label = "Cadastro de Carro" )]
+    public class CadastroCarroExibir : Activity
     {
+       protected override void OnCreate(Bundle bundle)
+        {
+            base.OnCreate(bundle);
+            SetContentView(Resource.Layout.CadastroCarro);
+            this.ActionBar.SetDisplayHomeAsUpEnabled(true); 
+        }
+
+        public override bool OnContextItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case Android.Resource.Id.Home:
+                    Finish();
+                    return false;
+                default:
+                    return base.OnContextItemSelected(item);
+            }
+            
+        }
     }
 }

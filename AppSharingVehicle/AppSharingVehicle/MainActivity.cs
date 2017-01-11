@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using Android.Locations;
 using AppSharingVehicle.Resources;
+using AppSharingVehicle.Resources.ClassesDeTransicao; 
 
 
 
@@ -111,11 +112,7 @@ namespace AppSharingVehicle
             StartActivity(typeof(PesquisaVeiculoExibir)); 
         }
 
-        //Método que instancia a tela de Menu Inicial após o Login ser realizado..
-        public void ExibeMenuInicial(object sender, EventArgs e)
-        {
-            StartActivity(typeof(Resources.ClassesDeTransicao.MenuInicial)); 
-        }
+       
 
     }
 }

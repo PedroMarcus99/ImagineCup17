@@ -9,7 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
-using AppSharingVehicle.Resources; 
+using AppSharingVehicle.Resources;
+using AppSharingVehicle.Resources.ClassesDeTransicao; 
 
 namespace AppSharingVehicle
 { [Activity (Label = "Login")]
@@ -21,7 +22,9 @@ namespace AppSharingVehicle
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Login);
             this.ActionBar.SetDisplayHomeAsUpEnabled(true);
-            FindViewById<Button>(Resource.Id.BtnLogar).Click += UsaBotao.ExibeMenuInicial;
+
+            //Método que utiliza botão da classe.. 
+            UtilizaBotao(); 
         }
 
         public override bool OnContextItemSelected(IMenuItem item)
@@ -36,8 +39,17 @@ namespace AppSharingVehicle
             }           
 
         }
-        
-       
+
+        //Método que instancia a tela de Menu Inicial após o Login ser realizado..
+        void ExibeMenuInicial(object sender, EventArgs e)
+        {
+            StartActivity(typeof(MenuInicial));
+        }
+
+        public void UtilizaBotao()
+        {
+            FindViewById<Button>(Resource.Id.BtnLogar).Click += ExibeMenuInicial;
+        }
        
         
     }

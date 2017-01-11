@@ -17,11 +17,16 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
 
     public class MenuInicial : Activity
     {
+        //Instancia a tela Inicial, MainActivity no caso. 
+        MainActivity UsaBotao = new MainActivity();
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Login);
+            SetContentView(Resource.Layout.MenuInicial);
             this.ActionBar.SetDisplayHomeAsUpEnabled(true);
+
+            //Método para ativação ddos botões da Activity. 
+            InstanciaBotoes(); 
         }
 
         public override bool OnContextItemSelected(IMenuItem item)
@@ -34,9 +39,8 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
                 default:
                     return base.OnContextItemSelected(item);
             }
-
         }
-        MainActivity UsaBotao = new MainActivity(); 
+        
 
         public void InstanciaBotoes(){
             FindViewById<Button>(Resource.Id.BtnCadastrarGrupoExibir).Click += UsaBotao.ExibeTelaCadastroDeGrupo;
@@ -51,5 +55,7 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
             FindViewById<Button>(Resource.Id.BtnOficinas).Click += UsaBotao.ExibeTelaMapaDeOficinas;
             FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += UsaBotao.ExibeTelaPesquisaDeDados;
         }
+
+       
     }
 }

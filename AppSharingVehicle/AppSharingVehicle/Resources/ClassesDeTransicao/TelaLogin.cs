@@ -46,6 +46,7 @@ namespace AppSharingVehicle
             StartActivity(typeof(MenuInicial));
         }
 
+        //Método que acessa a tela Inicial ao tocar no Botão. 
         public void UtilizaBotao()
         {
             FindViewById<Button>(Resource.Id.BtnLogar).Click += ExibeMenuInicial;

@@ -17,7 +17,7 @@ namespace AppSharingVehicle.Resources
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            SetContentView(Resource.Layout.Login);
+            SetContentView(Resource.Layout.MapaOficina);
             this.ActionBar.SetDisplayHomeAsUpEnabled(true);
         }
 

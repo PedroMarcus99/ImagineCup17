@@ -30,8 +30,7 @@ namespace AppSharingVehicle.Resources
                     return false;
                 default:
                     return base.OnContextItemSelected(item);
-            }
-            
+            }            
         }
     }
 }

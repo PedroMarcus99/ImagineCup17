@@ -39,23 +39,91 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
                 default:
                     return base.OnContextItemSelected(item);
             }
-        }
-        
+        }        
 
-        public void InstanciaBotoes(){
-            FindViewById<Button>(Resource.Id.BtnCadastrarGrupoExibir).Click += UsaBotao.ExibeTelaCadastroDeGrupo;
-            FindViewById<Button>(Resource.Id.BtnCadastrarVeiculoExibir).Click += UsaBotao.ExibeTelaCadastroDeCarro;
-            FindViewById<Button>(Resource.Id.BtnCadastroVistoriaExibir).Click += UsaBotao.ExibeTelaCadastroDeVistoria;
-            FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += UsaBotao.ExibeTelaPesquisaDeDados;
-            FindViewById<Button>(Resource.Id.BtnPesquisaVeiculoExibir).Click += UsaBotao.ExibeTelaPesquisaDeVeiculo;
-            FindViewById<Button>(Resource.Id.BtnRodizioExibir).Click += UsaBotao.ExibeTelaPesquisaDeRodizio;
-            FindViewById<Button>(Resource.Id.BtnValoresExibir).Click += UsaBotao.ExibeTelaConsultaValorContribuir;
-            FindViewById<Button>(Resource.Id.CadastroGastoExibir).Click += UsaBotao.ExibeTelaCadastroDeGasto;
-            FindViewById<Button>(Resource.Id.BtnCompraCombustivelExibir).Click += UsaBotao.ExibeTelaCadastroCompraCombustivel;
-            FindViewById<Button>(Resource.Id.BtnOficinas).Click += UsaBotao.ExibeTelaMapaDeOficinas;
-            FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += UsaBotao.ExibeTelaPesquisaDeDados;
+        public void InstanciaBotoes()
+        {
+            //Estes métodos dos botões acessam cada tela de acordo com o toque na tela. 
+            FindViewById<Button>(Resource.Id.BtnCadastrarGrupoExibir).Click += ExibeTelaCadastroDeGrupo;
+            FindViewById<Button>(Resource.Id.BtnCadastrarVeiculoExibir).Click += ExibeTelaCadastroDeCarro;
+            FindViewById<Button>(Resource.Id.BtnCadastroVistoriaExibir).Click += ExibeTelaCadastroDeVistoria;
+            FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += ExibeTelaPesquisaDeDados;
+            FindViewById<Button>(Resource.Id.BtnPesquisaVeiculoExibir).Click +=ExibeTelaPesquisaDeVeiculo;
+            FindViewById<Button>(Resource.Id.BtnRodizioExibir).Click += ExibeTelaPesquisaDeRodizio;
+            FindViewById<Button>(Resource.Id.BtnValoresExibir).Click += ExibeTelaConsultaValorContribuir;
+            FindViewById<Button>(Resource.Id.CadastroGastoExibir).Click += ExibeTelaCadastroDeGasto;
+            FindViewById<Button>(Resource.Id.BtnCompraCombustivelExibir).Click += ExibeTelaCadastroCompraCombustivel;
+            FindViewById<Button>(Resource.Id.BtnOficinas).Click += ExibeTelaMapaDeOficinas;
+            FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += ExibeTelaPesquisaDeDados;
         }
 
-       
+
+        //Método que instancia a tela de cadastro de carro. 
+         void ExibeTelaCadastroDeCarro(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroCarroExibir));
+        }
+
+        //Método que instancia a tela de Cadastro de Compra de Combustível. 
+        void ExibeTelaCadastroCompraCombustivel(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroCompraCombustivelExibir1));
+        }
+
+        //Método que instancia a tela de Cadastro de Gasto. 
+         void ExibeTelaCadastroDeGasto(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroGastoExibir));
+        }
+
+        //Método que instancia a tela de Cadastro de Grupo. 
+         void ExibeTelaCadastroDeGrupo(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroGrupoExibir));
+        }
+
+        //Método que instancia a tela de Cadastro de Motorista. 
+         void ExibeTelaCadastroDeMotorista(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroMotoristaExibir));
+        }
+
+        //Método que instancia a tela de Cadastro de Cistoria. 
+         void ExibeTelaCadastroDeVistoria(object sender, EventArgs e)
+        {
+            StartActivity(typeof(CadastroVistoriaExibir));
+        }
+
+        //Método que instancia a tela de Consulta Valor a Contribuir.
+         void ExibeTelaConsultaValorContribuir(object sender, EventArgs e)
+        {
+            StartActivity(typeof(ConsultaValorContribuirExibir));
+        }
+
+        //Método que instancia a tela de Mapa de Oficinas.
+         void ExibeTelaMapaDeOficinas(object sender, EventArgs e)
+        {
+            StartActivity(typeof(MapaOficinaExibir));
+        }
+
+        //Método que instancia a tela de Pesquisa de Dados. 
+         void ExibeTelaPesquisaDeDados(object sender, EventArgs e)
+        {
+            StartActivity(typeof(PesquisaDadosExibir));
+        }
+
+        //Método que instancia a tela de Pesquisa de Rodizio. 
+         void ExibeTelaPesquisaDeRodizio(object sender, EventArgs e)
+        {
+            StartActivity(typeof(PesquisaRodizioExibir));
+        }
+
+        //Método que instancia a tela de Pesquisa de Veiculo.
+         void ExibeTelaPesquisaDeVeiculo(object sender, EventArgs e)
+        {
+            StartActivity(typeof(PesquisaVeiculoExibir));
+        }
+
+
     }
 }

@@ -139,6 +139,11 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\sharing48.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Conexao\CONTROL\" />
+    <Folder Include="Resources\Conexao\DTO\" />
+    <Folder Include="Resources\Conexao\MODEL\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
      Other similar extension points exist, see Microsoft.Common.targets.

@@ -12,8 +12,9 @@ using Android.Widget;
 
 namespace AppSharingVehicle.Resources.Conexao.DTO
 {
-    class DTOLogin
+    public class DTOUsuario
     {
-        
+        public string Nome { get; set; }
+        public string Senha { get; set; }
     }
 }

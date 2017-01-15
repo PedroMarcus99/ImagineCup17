@@ -14,6 +14,7 @@ namespace AppSharingVehicle.Resources.Conexao.DTO
 {
     public class DTOUsuario
     {
+        public string Id;
         public string Nome { get; set; }
         public string Senha { get; set; }
     }

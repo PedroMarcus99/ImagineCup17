@@ -14,6 +14,10 @@ namespace AppSharingVehicle.Resources
 { [Activity (Label = "Cadastro de Motorista")] 
     public class CadastroMotoristaExibir : Activity
     {
+        /// <summary>
+        /// Instancia a tela de Cadastro de Motorista.
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

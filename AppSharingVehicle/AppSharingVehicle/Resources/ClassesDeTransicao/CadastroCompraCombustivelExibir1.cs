@@ -15,7 +15,10 @@ namespace AppSharingVehicle.Resources
     [Activity(Label = "Cadastro de Combustível")]
     public class CadastroCompraCombustivelExibir1 : Activity
     {
-
+        /// <summary>
+        /// Instancia a tela de Cadastro de Compra de Combustível. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

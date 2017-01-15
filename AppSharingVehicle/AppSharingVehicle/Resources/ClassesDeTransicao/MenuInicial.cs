@@ -17,8 +17,11 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
 
     public class MenuInicial : Activity
     {
-        //Instancia a tela Inicial, MainActivity no caso. 
         MainActivity UsaBotao = new MainActivity();
+        /// <summary>
+        /// Instancia a tela Inicial, Menu inicial no caso. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -39,11 +42,14 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
                 default:
                     return base.OnContextItemSelected(item);
             }
-        }        
+        }
 
+        /// <summary>
+        /// Estes métodos dos botões acessam cada tela de acordo com o toque na tela. 
+        /// </summary>
         public void InstanciaBotoes()
         {
-            //Estes métodos dos botões acessam cada tela de acordo com o toque na tela. 
+            
             FindViewById<Button>(Resource.Id.BtnCadastrarGrupoExibir).Click += ExibeTelaCadastroDeGrupo;
             FindViewById<Button>(Resource.Id.BtnCadastrarVeiculoExibir).Click += ExibeTelaCadastroDeCarro;
             FindViewById<Button>(Resource.Id.BtnCadastroVistoriaExibir).Click += ExibeTelaCadastroDeVistoria;
@@ -57,69 +63,123 @@ namespace AppSharingVehicle.Resources.ClassesDeTransicao
             FindViewById<Button>(Resource.Id.BtnPesquisarDadosExibir).Click += ExibeTelaPesquisaDeDados;
         }
 
-
-        //Método que instancia a tela de cadastro de carro. 
-         void ExibeTelaCadastroDeCarro(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de cadastro de carro. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaCadastroDeCarro(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroCarroExibir));
         }
 
-        //Método que instancia a tela de Cadastro de Compra de Combustível. 
+        
+        /// <summary>
+        /// Método que instancia a tela de Cadastro de Compra de Combustível. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void ExibeTelaCadastroCompraCombustivel(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroCompraCombustivelExibir1));
         }
 
-        //Método que instancia a tela de Cadastro de Gasto. 
-         void ExibeTelaCadastroDeGasto(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Cadastro de Gasto. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaCadastroDeGasto(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroGastoExibir));
         }
 
-        //Método que instancia a tela de Cadastro de Grupo. 
-         void ExibeTelaCadastroDeGrupo(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Cadastro de Grupo. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaCadastroDeGrupo(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroGrupoExibir));
         }
 
-        //Método que instancia a tela de Cadastro de Motorista. 
-         void ExibeTelaCadastroDeMotorista(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Cadastro de Motorista. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaCadastroDeMotorista(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroMotoristaExibir));
         }
 
-        //Método que instancia a tela de Cadastro de Cistoria. 
-         void ExibeTelaCadastroDeVistoria(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Cadastro de Cistoria. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaCadastroDeVistoria(object sender, EventArgs e)
         {
             StartActivity(typeof(CadastroVistoriaExibir));
         }
 
-        //Método que instancia a tela de Consulta Valor a Contribuir.
-         void ExibeTelaConsultaValorContribuir(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Consulta Valor a Contribuir.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaConsultaValorContribuir(object sender, EventArgs e)
         {
             StartActivity(typeof(ConsultaValorContribuirExibir));
         }
 
-        //Método que instancia a tela de Mapa de Oficinas.
-         void ExibeTelaMapaDeOficinas(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Mapa de Oficinas.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaMapaDeOficinas(object sender, EventArgs e)
         {
             StartActivity(typeof(MapaOficinaExibir));
         }
 
-        //Método que instancia a tela de Pesquisa de Dados. 
-         void ExibeTelaPesquisaDeDados(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Pesquisa de Dados. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaPesquisaDeDados(object sender, EventArgs e)
         {
             StartActivity(typeof(PesquisaDadosExibir));
         }
 
-        //Método que instancia a tela de Pesquisa de Rodizio. 
-         void ExibeTelaPesquisaDeRodizio(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Pesquisa de Rodizio.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaPesquisaDeRodizio(object sender, EventArgs e)
         {
             StartActivity(typeof(PesquisaRodizioExibir));
         }
 
-        //Método que instancia a tela de Pesquisa de Veiculo.
-         void ExibeTelaPesquisaDeVeiculo(object sender, EventArgs e)
+        
+        /// <summary>
+        /// Método que instancia a tela de Pesquisa de Veiculo.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        void ExibeTelaPesquisaDeVeiculo(object sender, EventArgs e)
         {
             StartActivity(typeof(PesquisaVeiculoExibir));
         }

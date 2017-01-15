@@ -45,37 +45,41 @@ namespace AppSharingVehicle.Resources.Conexao.CONTROL
         }
 
 
-        public DataTable SelecionaTodosLivros()
-        {
-            DataTable dt = new DataTable();
-            try
-            {
+        //public DataTable SelecionaTodosLivros()
+        //{
+        //    DataTable dt = new DataTable();
+        //    try
+        //    {
 
-                bd = new Model();
-                bd.Conectar();
-                dt = bd.RetDataTable("Select * from dados");
+        //        bd = new Model();
+        //        bd.Conectar();
+        //        dt = bd.RetDataTable("Select * from dados");
 
-                return dt;
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("Erro ao tentar cadastrar o livro:" + ex.Message);
-            }
-            finally
-            {
-                bd = null;
-            }
-            return dt;
-        }
+        //        return dt;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception("Erro ao tentar cadastrar o livro:" + ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        bd = null;
+        //    }
+        //    return dt;
+        //}
 
-        public void atualizar(LivroDTO dto)
+        /// <summary>
+        /// Este Método atualiza as informações dos usuários. 
+        /// </summary>
+        /// <param name="dto"></param>
+        public void atualizar(DTOUsuario dto)
         {
             try
             {
                 string nome = dto.Nome.Replace("'", "''");
                 bd = new Model();
                 bd.Conectar();
-                string comando = "UPDATE dados set NOME = '" + nome + "', ISBN = '" + dto.Isbn + "'where ID = " + dto.Id;
+                string comando = "UPDATE dados set Nome = '" + dto.Nome + "', Senha = '" + dto.Senha + "'where idUsuario = " + dto.Id;
                 bd.ExecutarComandoSQL(comando);
             }
             catch (Exception ex)
@@ -88,13 +92,13 @@ namespace AppSharingVehicle.Resources.Conexao.CONTROL
             }
         }
 
-        public void excluir(string idLivro)
+        public void excluir(DTOUsuario dto)
         {
             try
             {
                 bd = new Model();
                 bd.Conectar();
-                string comando = "DELETE FROM dados where ID=" + idLivro;
+                string comando = "DELETE FROM dados where idUsuario =" + dto.Id;
                 bd.ExecutarComandoSQL(comando);
             }
             catch (Exception ex)

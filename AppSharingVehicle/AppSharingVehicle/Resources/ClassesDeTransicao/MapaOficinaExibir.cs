@@ -14,6 +14,10 @@ namespace AppSharingVehicle.Resources
 { [Activity (Label = "Mapa de Oficinas")] 
     public class MapaOficinaExibir : Activity
     {
+        /// <summary>
+        /// Instancia a tela de Mapa de Oficina. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

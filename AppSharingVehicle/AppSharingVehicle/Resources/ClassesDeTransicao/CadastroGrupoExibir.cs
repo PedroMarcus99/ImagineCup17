@@ -11,9 +11,13 @@ using Android.Views;
 using Android.Widget;
 
 namespace AppSharingVehicle.Resources
-{ [Activity (Label = "")]
+{ [Activity (Label = "Cadastro de Grupo")]
     public class CadastroGrupoExibir : Activity
     {
+        /// <summary>
+        /// Instancia a tela de Cadastro de Grupo.
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

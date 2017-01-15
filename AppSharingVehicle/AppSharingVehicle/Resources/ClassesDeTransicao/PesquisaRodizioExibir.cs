@@ -14,6 +14,10 @@ namespace AppSharingVehicle.Resources
 { [Activity (Label = "Pesquisa de Rodízio")]
     public class PesquisaRodizioExibir : Activity
     {
+        /// <summary>
+        /// instancia a tela de Pesquisa de Rodízio. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

@@ -14,6 +14,10 @@ namespace AppSharingVehicle.Resources
 { [Activity (Label = "Pesquisa de Dados")] 
     public class PesquisaDadosExibir : Activity
     {
+        /// <summary>
+        /// Instancia a tela de Pesquisa de Dados. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

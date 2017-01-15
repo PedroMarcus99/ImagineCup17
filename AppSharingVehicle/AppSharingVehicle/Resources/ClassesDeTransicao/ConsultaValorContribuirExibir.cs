@@ -14,6 +14,10 @@ namespace AppSharingVehicle.Resources
 { [Activity (Label = "Consulta de Valores")]
     public class ConsultaValorContribuirExibir : Activity
     {
+        /// <summary>
+        /// Instancia a tela de Consulta de valores. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);

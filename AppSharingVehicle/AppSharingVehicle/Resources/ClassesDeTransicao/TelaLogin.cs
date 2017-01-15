@@ -17,6 +17,10 @@ namespace AppSharingVehicle
     public class TelaLogin : Activity
     {
         MainActivity UsaBotao = new MainActivity();
+        /// <summary>
+        /// Instancia a tela de Login. 
+        /// </summary>
+        /// <param name="bundle"></param>
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
@@ -40,13 +44,21 @@ namespace AppSharingVehicle
 
         }
 
-        //Método que instancia a tela de Menu Inicial após o Login ser realizado..
+        
+        /// <summary>
+        /// Método que instancia a tela de Menu Inicial após o Login ser realizado..
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void ExibeMenuInicial(object sender, EventArgs e)
         {
             StartActivity(typeof(MenuInicial));
         }
 
-        //Método que acessa a tela Inicial ao tocar no Botão. 
+        
+        /// <summary>
+        /// Método que acessa a tela Inicial ao tocar no Botão. 
+        /// </summary>
         public void UtilizaBotao()
         {
             FindViewById<Button>(Resource.Id.BtnLogar).Click += ExibeMenuInicial;

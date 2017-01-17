@@ -32,7 +32,7 @@ namespace AppSharingVehicle.Resources.Conexao.MODEL
         private String server = "localhost"; //Servidor, pode ser tanto a sua máquina local quanto um servidor de verdade
         private String user = "root"; //Usuário do banco de dados
         private String password = ""; //Senha do usuário para acessar o banco de dados
-        private String database = ""; //Banco de Dados
+        private String database = "sharingvehicle"; //Banco de Dados
 
 
         //Operações da Camada de Dados
